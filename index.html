@@ -24,7 +24,7 @@
   </header>
 
   <main>
-    
+
     <section class="container">
       <div class="row justify-content-between">
         <div id="active-card" class="col-md-7">
@@ -54,14 +54,14 @@
             <div class="row text-start">
               <div class="text-center mb-3">
                 <h3 class="mt-5">Create Jumble</h3>
-                <form>
+                <form onsubmit="app.JumblesController.getNewJumbleData()" id="new-jumble">
                   <div>
                     <input id="jumble-name" type="text" name="name" placeholder="Name...">
                   </div>
                   <div class="mt-2">
-                    <textarea id="jumble-body" type="text" name="text-box" placeholder="Your Jumble Text..." rows="7"></textarea>
+                    <textarea id="jumble-body" type="text" name="body" placeholder="Your Jumble Text..." rows="7"></textarea>
                   </div>
-                  <div class="btn btn-success">Click Me</div>
+                  <button class="btn btn-success">Click Me</button>
                 </form>
               </div>
             </div>
