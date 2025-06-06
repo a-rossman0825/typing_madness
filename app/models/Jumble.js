@@ -28,10 +28,10 @@ export class Jumble {
             <div class="mt-4 fs-1 ms-3 mb-3">${this.name}</div>
             <div class="fs-4 ms-3 mb-3">${this.body}</div>
           </div>
-          <div class="row border shadow rounded">
-            <form onsubmit="app.jumblesController.submitAttempt()">
-              <textarea class="col-12 form-control mt-3 bg-light" placeholder="Start Typing!!!" rows="10"></textarea>
-              <button class="col-12 btn btn-teal mt-3">Submit</button>
+          <div class="row border shadow rounded text-center">
+            <form id="text-box-form">
+              <textarea id="text-box" class="col-12 form-control mt-3 bg-light mb-3" placeholder="Start Typing!!!" rows="10"></textarea>
+              <button type="submit" class=" col-12 btn btn-teal mt-3">Submit</button>
             </form>
           </div>
     `

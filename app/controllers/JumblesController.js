@@ -32,7 +32,8 @@ export class JumblesController {
 
   drawActiveJumble() {
     const setActiveJumble = AppState.activeJumble;
-    setHTML('active-card', setActiveJumble.activeJumbleTemplate)
+    setHTML('active-card', setActiveJumble.activeJumbleTemplate);
+    
   }
 
   getNewJumbleData(){
@@ -45,4 +46,5 @@ export class JumblesController {
 
     console.log('getNewData controller')
   }
+
 }
